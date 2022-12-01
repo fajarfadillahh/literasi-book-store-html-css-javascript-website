@@ -85,7 +85,7 @@ img {
   padding: 8rem 0 4rem;
 
   &-title {
-    font-size: 32px;
+    font-size: 36px;
     font-family: var(--font-title);
     font-weight: var(--font-reguler);
     color: var(--title-color);
@@ -100,11 +100,13 @@ img {
 }
 
 .button {
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 2.5rem;
   background-color: var(--green-color);
+  font-size: 16px;
   font-weight: var(--font-semibold);
   color: var(--white-color);
 }
@@ -206,5 +208,53 @@ img {
     right: 1.5rem;
     font-size: 1.5rem;
     cursor: pointer;
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  background-color: var(--container-color);
+
+  &__container {
+    display: grid;
+    gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__direction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 8px;
+    background-color: var(--white-color);
+  }
+
+  &__input {
+    width: 100%;
+    height: 55px;
+    padding-left: 8px;
+    background-color: var(--white-color);
+    font-size: 16px;
+    font-weight: var(--font-reguler);
+    color: var(--title-color);
+
+    &::placeholder {
+      font-size: 16px;
+      color: var(--text-color);
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 320px;
+    justify-self: center;
   }
 }
