@@ -88,7 +88,7 @@ img {
   &-title {
     font-size: 36px;
     font-family: var(--font-title);
-    font-weight: var(--font-reguler);
+    font-weight: var(--font-semibold);
     color: var(--title-color);
     padding-bottom: 1rem;
   }
@@ -343,6 +343,9 @@ img {
   }
 
   &__button {
+    background-color: transparent;
+    border: 2px solid var(--green-color);
+    color: var(--green-color);
     justify-self: center;
     margin-top: 1rem;
   }
