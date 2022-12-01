@@ -350,3 +350,47 @@ img {
     margin-top: 1rem;
   }
 }
+
+// ===== ABOUT SECTION =====
+.about {
+  &__container {
+    display: grid;
+    gap: 3rem;
+  }
+
+  &__data {
+    justify-self: center;
+    text-align: center;
+  }
+
+  &__tags {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    text-align: left;
+
+    &-number {
+      font-size: 38px;
+      font-family: var(--font-title);
+      font-weight: var(--font-semibold);
+      color: var(--title-color);
+    }
+
+    &-text {
+      font-size: 14px;
+      color: var(--text-color);
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+  }
+
+  &__img {
+    justify-self: center;
+  }
+}
