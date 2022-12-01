@@ -265,7 +265,7 @@ img {
   }
 }
 
-// ===== BEST SECTION =====
+// ===== BEST & OTHER SECTION =====
 .best,
 .other {
   &__container {
@@ -393,5 +393,97 @@ img {
 
   &__img {
     justify-self: center;
+  }
+}
+
+// ===== TESTIMONIAL SECTION =====
+.testimonial {
+  &__title {
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1.5px solid rgba($color: #000000, $alpha: 0.1);
+    transition: var(--transition-400);
+
+    &-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .bxs-star {
+      font-size: 1.2em;
+      color: #ffdb10;
+    }
+
+    &-text {
+      --max-line: 5;
+
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: var(--max-line);
+      color: var(--text-color);
+    }
+
+    &-profile {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-img {
+      width: 60px;
+    }
+
+    &-name {
+      font-size: 20px;
+      font-family: var(--font-title);
+      color: var(--title-color);
+      margin-bottom: 6px;
+    }
+
+    &-professtion {
+      font-size: 14px;
+      color: var(--text-color);
+    }
+
+    // swiper active
+    &.swiper-slide-active {
+      border-color: var(--white-color);
+      background-color: var(--white-color);
+      box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.1);
+    }
+  }
+
+  .swiper-wrapper {
+    padding: 2rem 0 3rem;
+  }
+
+  // swiper pagination
+  &__container {
+    overflow: hidden;
+
+    & .swiper-pagination {
+      position: initial;
+    }
+
+    & .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      transition: var(--transition-400);
+    }
+
+    & .swiper-pagination-bullet-active {
+      width: 2rem;
+      height: 8px;
+      background-color: var(--green-color);
+      border-radius: 5rem;
+    }
   }
 }
