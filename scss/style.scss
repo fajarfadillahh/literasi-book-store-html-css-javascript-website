@@ -105,7 +105,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   background-color: var(--green-color);
   font-size: 16px;
   font-weight: var(--font-semibold);
@@ -610,5 +610,44 @@ img {
   .home__img,
   .about__img {
     width: 400px;
+  }
+}
+
+// width 767px
+@media screen and (min-width: 767px) {
+  .header {
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__theme {
+      position: static;
+    }
+  }
+
+  .callback {
+    &__wrapper {
+      grid-template-rows: none;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    &__data {
+      width: auto;
+    }
   }
 }
