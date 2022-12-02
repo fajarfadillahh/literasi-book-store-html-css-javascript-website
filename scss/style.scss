@@ -642,6 +642,12 @@ img {
   }
 }
 
+// ===== ::SELECTION =====
+::selection {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
 // ===== MEDIA QUERIES =====
 // width 480px
 @media screen and (min-width: 480px) {
