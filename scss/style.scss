@@ -720,7 +720,48 @@ img {
     }
 
     &__img {
-      width: auto;
+      width: 490px;
+    }
+  }
+}
+
+// width 1200px
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 56px;
+  }
+
+  .home {
+    &__title {
+      font-size: 62px;
+    }
+
+    &__text,
+    &__direction {
+      width: 460px;
+    }
+  }
+
+  .about__text,
+  .callback__text {
+    width: 480px;
+  }
+
+  .callback__text {
+    width: 420px;
+  }
+
+  .footer {
+    &__group {
+      grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    }
+
+    &__data-text {
+      width: 300px;
+    }
+
+    &__content {
+      justify-self: center;
     }
   }
 }
