@@ -53,7 +53,45 @@
 }
 
 html {
+  height: 100px;
   scroll-behavior: smooth;
+
+  // dark mode
+  &.dark {
+    --container-color: #212529;
+    --title-color: #fff;
+    --text-color: #b2b6b9;
+
+    .home,
+    .callback__wrapper,
+    .testimonial__content.swiper-slide-active {
+      background-color: #191d20;
+    }
+
+    .home {
+      &__direction,
+      &__input {
+        background-color: var(--container-color);
+        color: var(--white-color);
+      }
+    }
+
+    .testimonial__content.swiper-slide-active {
+      border-color: #191d20;
+    }
+
+    .best,
+    .other {
+      &__content:hover {
+        background-color: #191d20;
+        border-color: #191d20;
+      }
+
+      &__content-overlay {
+        background-color: #191d20;
+      }
+    }
+  }
 }
 
 body {
