@@ -499,6 +499,7 @@ img {
 
   &__data {
     padding: 3rem 1.5rem;
+    justify-self: center;
   }
 
   &__button {
@@ -576,5 +577,20 @@ img {
     padding-top: 2rem;
     border-top: 1.5px solid rgba($color: #000000, $alpha: 0.1);
     color: var(--text-color);
+  }
+}
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__data,
+  .about__data,
+  .callback__data {
+    width: 400px;
+  }
+
+  .home__img,
+  .about__img {
+    width: 400px;
   }
 }
